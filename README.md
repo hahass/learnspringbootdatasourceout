@@ -11,6 +11,7 @@
 
 3）允许的变量，通常都要给定默认值，比如我们使用一个service时，可以@Service，也可以@Service("xxxx")
 
+```
 @Retention(RetentionPolicy.RUNTIME)
 @Target({
         ElementType.METHOD
@@ -19,6 +20,7 @@ public @interface RoutingDataSource {
 
     String value() default DataSources.MASTER_DB;
 }
+```
 第二步、定义需要使用的数据库及配置
 1、数据库配置：application.properties，这里要注意不同db的前缀区别
 
