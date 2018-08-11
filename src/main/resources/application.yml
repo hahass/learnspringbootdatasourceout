@@ -1,0 +1,17 @@
+spring:
+  ## datasource master #
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/master?zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&socketTimeout=60000
+    username: root
+    password: 123
+
+  datasourceslave:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/slave?zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&socketTimeout=60000
+    username: root
+    password: 123
+
+
